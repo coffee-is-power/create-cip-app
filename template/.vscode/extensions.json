@@ -2,6 +2,16 @@
   "recommendations": [
     "nrwl.angular-console",
     "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "rust-lang.rust-analyzer",
+    "EditorConfig.EditorConfig",
+    "nrwl.angular-console",
+    "svelte.svelte-vscode",
+    "bradlc.vscode-tailwindcss",
+    "tamasfe.even-better-toml",
+    "serayuzgur.crates",
+    "vadimcn.vscode-lldb",
+    "formulahendry.auto-rename-tag",
+    "belfz.search-crates-io",
   ]
 }
