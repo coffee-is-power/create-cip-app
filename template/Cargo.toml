@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "apps/%BACKEND_NAME%"
+]
+
+
+[profile.dev.package.sqlx-macros]
+opt-level = 3

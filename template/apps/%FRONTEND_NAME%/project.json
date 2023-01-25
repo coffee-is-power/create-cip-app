@@ -1,0 +1,35 @@
+{
+  "name": "%FRONTEND_NAME%",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/%FRONTEND_NAME%/src",
+  "targets": {
+    "build": {
+      "executor": "nx:run-script",
+      "outputs": [
+        "packages/%FRONTEND_NAME%/.svelte-kit",
+        "packages/%FRONTEND_NAME%/build"
+      ],
+      "options": {
+        "script": "build"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-script",
+      "outputs": ["packages/%FRONTEND_NAME%/.svelte-kit"],
+      "options": {
+        "script": "dev"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "apps/%FRONTEND_NAME%/**/*.{ts,svelte,spec.ts,js,spec.ts}"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

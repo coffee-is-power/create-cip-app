@@ -1,0 +1,19 @@
+{
+    "name": "create-cip-app",
+    "version": "1.0.0",
+    "description": "Coffee's Power Stack Generator",
+    "type": "module",
+    "main": "src/index.js",
+    "scripts": {},
+    "keywords": [],
+    "author": "Tiago Dinis <tiagodinis33@proton.me>",
+    "license": "MIT",
+    "dependencies": {
+        "inquirer": "^9.1.4",
+        "ncp": "^2.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^18.11.18",
+        "prettier": "^2.8.3"
+    }
+}
