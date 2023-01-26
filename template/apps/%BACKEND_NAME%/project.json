@@ -4,6 +4,20 @@
   "projectType": "application",
   "sourceRoot": "apps/%BACKEND_NAME%/src",
   "targets": {
+
+    "serve": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["build"],
+      "options": {
+        "command": "target/debug/%BACKEND_NAME%",
+        "color": true
+      },
+      "configurations": {
+        "production": {
+          "command": "target/release/%BACKEND_NAME%"
+        }
+      }
+    },
     "build": {
       "executor": "@nxrs/cargo:build",
       "options": {
