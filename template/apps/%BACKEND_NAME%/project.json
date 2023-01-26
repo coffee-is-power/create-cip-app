@@ -18,6 +18,14 @@
         }
       }
     },
+
+    "start-db": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "docker-compose -f docker-compose.development.yml up -d",
+        "cwd": "apps/%BACKEND_NAME%"
+      }
+    },
     "build": {
       "executor": "@nxrs/cargo:build",
       "options": {
